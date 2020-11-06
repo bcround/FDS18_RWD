@@ -1,0 +1,128 @@
+.app-main {
+
+}
+.news__notice {
+  width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.news-headline {
+ color: var(--theme-primary);
+ font-size: 2rem;
+ background: url(../images/icon-news-headline.svg) no-repeat 0 5px;
+ text-indent: 10px;
+}
+.news-text {
+  font-size: 1.3rem;
+}
+.news__press-form {
+
+}
+.news__press-form fieldset {
+  margin-left: 260px;
+}
+.press-search-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  position: relative;
+}
+.press-search-container select {
+  border: 0;
+  background: #eee;
+  border-radius: 5px;
+  padding-right: 30px;
+}
+.press-search-container input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid;
+}
+.button-search {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background: transparent url(../images/icon-search.svg) no-repeat;
+  border: 0;
+}
+.news__press-table {
+  border-top: 2px solid var(--theme-primary);
+  border-bottom: 2px solid var(--theme-primary);
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+.news__press-table th {
+  color: var(--theme-primary);
+  border-bottom: 1px solid #5373a6;
+}
+.news__press-table th:first-child {
+  width: 60px;
+}
+/* .news__press-table th{
+  border: 1px solid;
+} */
+.news__press-table tr {
+  
+}
+.news__press-table td {
+  border-bottom: 1px solid #5373a6;
+  /* border: 1px solid; */
+  text-align: center;
+  position: relative;
+  font-size: 1.3rem;
+  color: var(--theme-primary);
+}
+.press-thumbnail {
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+.press-article {
+  text-align: left;
+  padding-left: 80px;
+}
+.press-article dt {
+  font-size: 1.6rem;
+  color: var(--theme-primary);
+}
+.press-article dd {
+  margin-left: 0;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: var(--theme-disable);
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  background: transparent;
+}
+.button svg path {
+  fill: #5373a6;
+}
+.pagination {
+  display: flex;
+}
+.pagination li {
+  margin: 0 5px;
+}
+
+@media all and (max-width: 767px) {
+  .news__notice {
+    width: 100%;
+  }
+  .news__press-form fieldset{
+    margin-left: 0;
+  }
+  .press-thumbnail{
+    display: none;
+  }
+  .press-article {
+    padding-left: 0;
+  }
+}
